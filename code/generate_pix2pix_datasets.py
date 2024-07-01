@@ -134,37 +134,35 @@ def create_dataset_single_sub_single_plane(subID, data_source, outdir, plane):
         cv2.imwrite(filepath, combined_asl_asl_png_array)
 
 # create dataset for a given plane (axial, coronal, or sagittal)
-def create_dataset_single_plane(subs_file, data_source, outdir, plane):
-
-    full_subject_list = get_subject_list(subs_file)
+def create_dataset_single_plane(full_subject_list, data_source, outdir, plane):
 
     # process all subjects
     for subID in full_subject_list:
         create_dataset_single_sub_single_plane(subID, data_source, outdir, plane)
 
 # iterate over each plane
-def create_dataset_series(subs_file, data_source, outdir):
+def create_dataset_series(full_subject_list, data_dir, output_dir):
     planes = ['axial', 'coronal', 'sagittal']
 
     # Check if the folder where the .png files will be output exists 
     # if not, create it
-    if os.path.exists(outdir) == False:
-        os.makedirs(outdir)
+    if os.path.exists(output_dir) == False:
+        os.makedirs(output_dir)
 
     for plane in planes:
         print(plane)
 
-        output_path = os.path.join(outdir, f'dataset_{plane}_pix2pix')
+        output_path = os.path.join(output_dir, f'dataset_{plane}_pix2pix')
 
         if os.path.exists(output_path) == False:
             os.makedirs(output_path)
         
-        output_path_test = os.path.join(outdir, f'dataset_{plane}_pix2pix', 'test')
+        output_path_test = os.path.join(output_dir, f'dataset_{plane}_pix2pix', 'test')
 
         if os.path.exists(output_path_test) == False:
             os.makedirs(output_path_test)
         
-        create_dataset_single_plane(subs_file, data_source, outdir, plane)
+        create_dataset_single_plane(full_subject_list, data_dir, output_dir, plane)
     
     print('Finished')
 
@@ -241,8 +239,9 @@ if __name__ == '__main__':
 
     print('Starting')
 
+    full_subject_list = get_subject_list(os.path.abspath(args.subs_file))
+
     if bool(args.parallel) == True:
-        full_subject_list = get_subject_list(os.path.abspath(args.subs_file))
         
         create_dataset_parallel(
             full_subject_list=full_subject_list,
@@ -252,9 +251,9 @@ if __name__ == '__main__':
 
     else:
         create_dataset_series(
-            subs_file=os.path.abspath(args.subs_file),
-            data_source=os.path.abspath(args.data),
-            outdir=os.path.abspath(args.output_dir)
+            full_subject_list=full_subject_list,
+            data_dir=os.path.abspath(args.data),
+            output_dir=os.path.abspath(args.output_dir)
         )
 
     print('Finished')

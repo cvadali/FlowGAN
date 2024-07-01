@@ -25,7 +25,7 @@ def test_single_fold(fold, model_dir, model_name, data_source, output_dir, pytor
     )
 
 # test all folds
-def test_all_folds(model_dir, model_name, data_source, output_dir, pytorch_CycleGAN_andl_pix2pix_dir, direction='BtoA', n_splits=12):
+def test_all_folds(model_dir, model_name, data_source, output_dir, pytorch_CycleGAN_and_pix2pix_dir, direction='BtoA', n_splits=12):
     # get list of folds
     folds = [f'fold_{fold}' for fold in range(0, int(n_splits))]
 
@@ -39,7 +39,7 @@ def test_all_folds(model_dir, model_name, data_source, output_dir, pytorch_Cycle
             model_name=model_name,
             data_source=data_source,
             output_dir=output_dir,
-            pytorch_CycleGAN_and_pix2pix_dir=pytorch_CycleGAN_andl_pix2pix_dir,
+            pytorch_CycleGAN_and_pix2pix_dir=pytorch_CycleGAN_and_pix2pix_dir,
             direction=direction
         )
 

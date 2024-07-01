@@ -57,7 +57,7 @@ def test_model(model_name, data_source, checkpoints_dir, output_dir, pytorch_Cyc
         print(results_dir)
 
         # test model in plane
-        test_single_plane(name_of_model, dataset_name, direction, checkpoints_dir, results_dir)
+        test_single_plane(name_of_model, dataset_name, direction, checkpoints_dir, results_dir, pytorch_CycleGAN_and_pix2pix_dir)
 
 
 if __name__ == '__main__':
