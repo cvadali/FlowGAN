@@ -122,7 +122,7 @@ def coregister_all_subjects(full_subject_list, recon_dir, out_dir, n_splits=12):
 # if script is run
 if __name__ == '__main__':
     # parse command line args
-    parser = argparse.ArgumentParser(description='Coregister reshaped reconstructed volumes from FLowGAN inference in ensemble mode')
+    parser = argparse.ArgumentParser(description='Coregister reshaped reconstructed volumes from FlowGAN inference in ensemble mode')
 
     # file with all subjects
     parser.add_argument('-subs_file','--subs_file',

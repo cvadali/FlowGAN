@@ -32,7 +32,7 @@ def reconstruct_volumes_series(full_subject_list, data_dir, t1_dir, output_dir, 
     for fold in folds:
         print(f'Reconstructing volumes for {fold}')
 
-        data_dir_fold = os.path.join(data_dir, fold, 'results_FLowGAN')
+        data_dir_fold = os.path.join(data_dir, fold, 'results_FlowGAN')
 
         output_dir_fold = os.path.join(output_dir, fold, 'recon_niftis')
 
@@ -64,7 +64,7 @@ def reconstruct_volumes_parallel(full_subject_list, data_dir, t1_dir, output_dir
 
     for fold in folds:
         list_of_args.append((full_subject_list, 
-                             os.path.join(data_dir, fold, 'results_FLowGAN'), 
+                             os.path.join(data_dir, fold, 'results_FlowGAN'), 
                              t1_dir, 
                              os.path.join(output_dir, fold, 'recon_niftis'), 
                              f'{model_name_stem}_{fold}', 

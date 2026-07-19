@@ -205,7 +205,7 @@ def create_dataset_parallel(full_subject_list, data_dir, output_dir):
 # if script is run
 if __name__ == '__main__':
     # parse command line args
-    parser = argparse.ArgumentParser(description='Create test pix2pix dataset for FLowGAN inference')
+    parser = argparse.ArgumentParser(description='Create test pix2pix dataset for FlowGAN inference')
     
     # file with subjects
     parser.add_argument('-subs_file','--subs_file',

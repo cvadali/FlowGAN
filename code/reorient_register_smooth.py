@@ -149,7 +149,7 @@ def reorient_register_and_smooth_each_subject(full_subject_list, data_dir):
 # if script is run
 if __name__ == '__main__':
     # parse command line args
-    parser = argparse.ArgumentParser(description='Reorient, register, and smooth T1 and ASL CBF in preparation for running through FLowGAN')
+    parser = argparse.ArgumentParser(description='Reorient, register, and smooth T1 and ASL CBF in preparation for running through FlowGAN')
 
      # file containing name of subjects
     parser.add_argument('-subs_file','--subs_file',

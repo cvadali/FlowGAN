@@ -174,7 +174,7 @@ def smooth_one_sub(subject, input_dir, output_dir, voxel_size=(1,1,1)):
     averaged_image = average_planes(smoothed_axial_image, smoothed_coronal_image, smoothed_sagittal_image)
 
     # smoothed averaged image path
-    smoothed_averaged_path = os.path.join(output_dir, f'{subject}_FLowGAN_pet.nii.gz')
+    smoothed_averaged_path = os.path.join(output_dir, f'{subject}_FlowGAN_pet.nii.gz')
 
     # create nifti image
     smoothed_averaged_image = nib.Nifti1Image(averaged_image, axial_image.affine, axial_image.header)

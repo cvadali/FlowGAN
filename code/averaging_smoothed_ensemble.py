@@ -30,7 +30,7 @@ def average_single_sequence(subject, modality, input_dir, output_dir, n_splits=1
 
     for fold in folds:
         # image path
-        image_path = os.path.join(input_dir, fold, 'recon_niftis_smoothed_coregistered_across_folds', f'{subject}_FLowGAN_{modality}.nii.gz')
+        image_path = os.path.join(input_dir, fold, 'recon_niftis_smoothed_coregistered_across_folds', f'{subject}_FlowGAN_{modality}.nii.gz')
 
         image = nib.load(image_path)
 
@@ -49,7 +49,7 @@ def average_single_sequence(subject, modality, input_dir, output_dir, n_splits=1
     # averaged image
     averaged_image = nib.Nifti1Image(averaged_data, affine=images[0].affine, header=images[0].header)
 
-    output_path = os.path.join(output_dir, f'{subject}_FLowGAN_{modality}.nii.gz')
+    output_path = os.path.join(output_dir, f'{subject}_FlowGAN_{modality}.nii.gz')
 
     # save averaged image
     nib.save(averaged_image, output_path)

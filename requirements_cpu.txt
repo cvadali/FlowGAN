@@ -3,7 +3,6 @@ dominate==2.9.1
 nibabel==5.2.0
 numpy==1.26.3
 opencv-python==4.9.0.80
-PyWavelets==1.6.0
 scipy==1.12.0
 tensorboard==2.15.1
 tensorboard-data-server==0.7.2

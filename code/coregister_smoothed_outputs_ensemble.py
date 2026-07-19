@@ -68,11 +68,11 @@ def coregister_pet_single_subject(subject, ensemble_output_dir, n_splits=12):
 
         for modality in modalities:
             print(f'Processing {fold} {subject} {modality}')
-            source_path = os.path.join(ensemble_output_dir, fold, 'recon_niftis_smoothed', f'{subject}_FLowGAN_{modality}.nii.gz')
+            source_path = os.path.join(ensemble_output_dir, fold, 'recon_niftis_smoothed', f'{subject}_FlowGAN_{modality}.nii.gz')
 
-            target_path = os.path.join(ensemble_output_dir, 'fold_0', 'recon_niftis_smoothed', f'{subject}_FLowGAN_pet.nii.gz')
+            target_path = os.path.join(ensemble_output_dir, 'fold_0', 'recon_niftis_smoothed', f'{subject}_FlowGAN_pet.nii.gz')
 
-            path_out = os.path.join(output_dir_fold, f'{subject}_FLowGAN_{modality}.nii.gz')
+            path_out = os.path.join(output_dir_fold, f'{subject}_FlowGAN_{modality}.nii.gz')
 
             # coregister all images for a given subject to the PET volume for that subject in fold 0
             if fold == 'fold_0' and modality == 'pet':
