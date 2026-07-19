@@ -1,0 +1,76 @@
+Captions for the per-split supplementary tables.
+Per-region summary tables (no subject-level rows). Each table is
+reissued on the cross-validated training split and on the held-out
+test split. n is the number of subjects contributing to the split.
+
+[SuppTable02_TLE_asymmetrycorr_DKT_crossvalidated.csv]
+Across-subject regional concordance in the epilepsy dataset using the Desikan-Killiany-Tourville (DKT) atlas. For each brain region, Spearman correlation and mean bias of FlowGAN-synthetic and ASL asymmetry index are computed against real FDG-PET across subjects; Corr_Diff is the FlowGAN minus ASL difference in Spearman r (positive favours FlowGAN). Computed on the cross-validated training split (n = 58 subjects).
+
+[SuppTable03_TLE_asymmetrycorr_HarvardOxford_crossvalidated.csv]
+Across-subject regional concordance in the epilepsy dataset using the Harvard-Oxford atlas. For each brain region, Spearman correlation and mean bias of FlowGAN-synthetic and ASL asymmetry index are computed against real FDG-PET across subjects; Corr_Diff is the FlowGAN minus ASL difference in Spearman r (positive favours FlowGAN). Computed on the cross-validated training split (n = 58 subjects).
+
+[SuppTable04_MCI_suvrcorr_DKT_crossvalidated.csv]
+Across-subject regional concordance in the mild cognitive impairment (MCI) dataset using the Desikan-Killiany-Tourville (DKT) atlas. For each brain region, Spearman correlation and mean bias of FlowGAN-synthetic and ASL standardized uptake value ratio (SUVR) / relative cerebral blood-flow (rCBF) are computed against real FDG-PET across subjects; Corr_Diff is the FlowGAN minus ASL difference in Spearman r (positive favours FlowGAN). Computed on the cross-validated training split (n = 71 subjects).
+
+[SuppTable05_MCI_suvrcorr_HarvardOxford_crossvalidated.csv]
+Across-subject regional concordance in the mild cognitive impairment (MCI) dataset using the Harvard-Oxford atlas. For each brain region, Spearman correlation and mean bias of FlowGAN-synthetic and ASL standardized uptake value ratio (SUVR) / relative cerebral blood-flow (rCBF) are computed against real FDG-PET across subjects; Corr_Diff is the FlowGAN minus ASL difference in Spearman r (positive favours FlowGAN). Computed on the cross-validated training split (n = 71 subjects).
+
+[SuppTable06_TLE_congruency_DKT_crossvalidated.csv]
+Regional sign-congruency in the epilepsy dataset using the Desikan-Killiany-Tourville (DKT) atlas. Congruency is the proportion of subjects in which FlowGAN-synthetic (Congruency_FlowGAN) or ASL (Congruency_ASL) agrees with real FDG-PET on the direction of regional asymmetry; Congruency_Diff is their difference. Higher values indicate stronger agreement. Computed on the cross-validated training split (n = 58 subjects).
+
+[SuppTable07_TLE_congruency_HarvardOxford_crossvalidated.csv]
+Regional sign-congruency in the epilepsy dataset using the Harvard-Oxford atlas. Congruency is the proportion of subjects in which FlowGAN-synthetic (Congruency_FlowGAN) or ASL (Congruency_ASL) agrees with real FDG-PET on the direction of regional asymmetry; Congruency_Diff is their difference. Higher values indicate stronger agreement. Computed on the cross-validated training split (n = 58 subjects).
+
+[SuppTable08_MCI_congruency_DKT_crossvalidated.csv]
+Regional sign-congruency in the mild cognitive impairment (MCI) dataset using the Desikan-Killiany-Tourville (DKT) atlas. Congruency is the proportion of subjects in which FlowGAN-synthetic (Congruency_FlowGAN) or ASL (Congruency_ASL) agrees with real FDG-PET on the direction of regional asymmetry; Congruency_Diff is their difference. Higher values indicate stronger agreement. Computed on the cross-validated training split (n = 71 subjects).
+
+[SuppTable09_MCI_congruency_HarvardOxford_crossvalidated.csv]
+Regional sign-congruency in the mild cognitive impairment (MCI) dataset using the Harvard-Oxford atlas. Congruency is the proportion of subjects in which FlowGAN-synthetic (Congruency_FlowGAN) or ASL (Congruency_ASL) agrees with real FDG-PET on the direction of regional asymmetry; Congruency_Diff is their difference. Higher values indicate stronger agreement. Computed on the cross-validated training split (n = 71 subjects).
+
+[SuppTable_CohensD_MCI_DKT_crossvalidated.csv]
+Effect sizes (Cohen's d) for hemispheric lateralization (mild cognitive impairment (MCI)) using the Desikan-Killiany-Tourville (DKT) atlas, for real, FlowGAN-synthetic, and ASL. Computed on the cross-validated training split (n = 71 subjects).
+
+[SuppTable_CohensD_MCI_HarvardOxford_crossvalidated.csv]
+Effect sizes (Cohen's d) for hemispheric lateralization (mild cognitive impairment (MCI)) using the Harvard-Oxford atlas, for real, FlowGAN-synthetic, and ASL. Computed on the cross-validated training split (n = 71 subjects).
+
+[SuppTable_CohensD_TLE_DKT_crossvalidated.csv]
+Effect sizes (Cohen's d) for hemispheric lateralization (epilepsy) using the Desikan-Killiany-Tourville (DKT) atlas, for real, FlowGAN-synthetic, and ASL. Computed on the cross-validated training split (n = 58 subjects).
+
+[SuppTable_CohensD_TLE_HarvardOxford_crossvalidated.csv]
+Effect sizes (Cohen's d) for hemispheric lateralization (epilepsy) using the Harvard-Oxford atlas, for real, FlowGAN-synthetic, and ASL. Computed on the cross-validated training split (n = 58 subjects).
+
+[SuppTable10_TLE_asymmetrycorr_DKT_test.csv]
+Across-subject regional concordance in the epilepsy dataset using the Desikan-Killiany-Tourville (DKT) atlas. For each brain region, Spearman correlation and mean bias of FlowGAN-synthetic and ASL asymmetry index are computed against real FDG-PET across subjects; Corr_Diff is the FlowGAN minus ASL difference in Spearman r (positive favours FlowGAN). Computed on the held-out test split (n = 10 subjects).
+
+[SuppTable11_TLE_asymmetrycorr_HarvardOxford_test.csv]
+Across-subject regional concordance in the epilepsy dataset using the Harvard-Oxford atlas. For each brain region, Spearman correlation and mean bias of FlowGAN-synthetic and ASL asymmetry index are computed against real FDG-PET across subjects; Corr_Diff is the FlowGAN minus ASL difference in Spearman r (positive favours FlowGAN). Computed on the held-out test split (n = 10 subjects).
+
+[SuppTable12_MCI_suvrcorr_DKT_test.csv]
+Across-subject regional concordance in the mild cognitive impairment (MCI) dataset using the Desikan-Killiany-Tourville (DKT) atlas. For each brain region, Spearman correlation and mean bias of FlowGAN-synthetic and ASL standardized uptake value ratio (SUVR) / relative cerebral blood-flow (rCBF) are computed against real FDG-PET across subjects; Corr_Diff is the FlowGAN minus ASL difference in Spearman r (positive favours FlowGAN). Computed on the held-out test split (n = 14 subjects).
+
+[SuppTable13_MCI_suvrcorr_HarvardOxford_test.csv]
+Across-subject regional concordance in the mild cognitive impairment (MCI) dataset using the Harvard-Oxford atlas. For each brain region, Spearman correlation and mean bias of FlowGAN-synthetic and ASL standardized uptake value ratio (SUVR) / relative cerebral blood-flow (rCBF) are computed against real FDG-PET across subjects; Corr_Diff is the FlowGAN minus ASL difference in Spearman r (positive favours FlowGAN). Computed on the held-out test split (n = 14 subjects).
+
+[SuppTable14_TLE_congruency_DKT_test.csv]
+Regional sign-congruency in the epilepsy dataset using the Desikan-Killiany-Tourville (DKT) atlas. Congruency is the proportion of subjects in which FlowGAN-synthetic (Congruency_FlowGAN) or ASL (Congruency_ASL) agrees with real FDG-PET on the direction of regional asymmetry; Congruency_Diff is their difference. Higher values indicate stronger agreement. Computed on the held-out test split (n = 10 subjects).
+
+[SuppTable15_TLE_congruency_HarvardOxford_test.csv]
+Regional sign-congruency in the epilepsy dataset using the Harvard-Oxford atlas. Congruency is the proportion of subjects in which FlowGAN-synthetic (Congruency_FlowGAN) or ASL (Congruency_ASL) agrees with real FDG-PET on the direction of regional asymmetry; Congruency_Diff is their difference. Higher values indicate stronger agreement. Computed on the held-out test split (n = 10 subjects).
+
+[SuppTable16_MCI_congruency_DKT_test.csv]
+Regional sign-congruency in the mild cognitive impairment (MCI) dataset using the Desikan-Killiany-Tourville (DKT) atlas. Congruency is the proportion of subjects in which FlowGAN-synthetic (Congruency_FlowGAN) or ASL (Congruency_ASL) agrees with real FDG-PET on the direction of regional asymmetry; Congruency_Diff is their difference. Higher values indicate stronger agreement. Computed on the held-out test split (n = 14 subjects).
+
+[SuppTable17_MCI_congruency_HarvardOxford_test.csv]
+Regional sign-congruency in the mild cognitive impairment (MCI) dataset using the Harvard-Oxford atlas. Congruency is the proportion of subjects in which FlowGAN-synthetic (Congruency_FlowGAN) or ASL (Congruency_ASL) agrees with real FDG-PET on the direction of regional asymmetry; Congruency_Diff is their difference. Higher values indicate stronger agreement. Computed on the held-out test split (n = 14 subjects).
+
+[SuppTable_CohensD_MCI_DKT_test.csv]
+Effect sizes (Cohen's d) for hemispheric lateralization (mild cognitive impairment (MCI)) using the Desikan-Killiany-Tourville (DKT) atlas, for real, FlowGAN-synthetic, and ASL. Computed on the held-out test split (n = 14 subjects).
+
+[SuppTable_CohensD_MCI_HarvardOxford_test.csv]
+Effect sizes (Cohen's d) for hemispheric lateralization (mild cognitive impairment (MCI)) using the Harvard-Oxford atlas, for real, FlowGAN-synthetic, and ASL. Computed on the held-out test split (n = 14 subjects).
+
+[SuppTable_CohensD_TLE_DKT_test.csv]
+Effect sizes (Cohen's d) for hemispheric lateralization (epilepsy) using the Desikan-Killiany-Tourville (DKT) atlas, for real, FlowGAN-synthetic, and ASL. Computed on the held-out test split (n = 10 subjects).
+
+[SuppTable_CohensD_TLE_HarvardOxford_test.csv]
+Effect sizes (Cohen's d) for hemispheric lateralization (epilepsy) using the Harvard-Oxford atlas, for real, FlowGAN-synthetic, and ASL. Computed on the held-out test split (n = 10 subjects).
