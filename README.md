@@ -143,9 +143,9 @@ Lucas A\*, Vadali C\*, Mouchtaris S, Arnold TC, Gugger JJ, Kulick C, Josyula M, 
 
 \*These authors contributed equally.
 
-_Communications Medicine_ (accepted, 2026)
+_In revision_ (2026)
 
-<!-- TODO: add the link/DOI to the paper once it is published. -->
+<!-- TODO: add the journal, link, and DOI once the paper is accepted/published. -->
 
 **LowGAN**, the architecture FlowGAN is based on:
 
