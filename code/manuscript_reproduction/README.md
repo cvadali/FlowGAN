@@ -96,7 +96,7 @@ overwrites them with identical results.
 | `04_lateralization_cohens_d.py` | Cohen's d effect sizes, quadrant scatterplots | No |
 | `11_per_fold_regional_analysis.py` | Per-fold (CV vs held-out) regional analysis | No |
 | `13_followup_values.py` | Additional follow-up values from the revision | No |
-| `14_source_data.py` | Per-figure source data workbooks (Supplementary Data) | No |
+| `14_source_data.py` | Per-figure source-data workbooks for the main figures | No |
 | `10_per_fold_quality_metrics.py` | SSIM/PSNR/RMSE/NCC per fold | **Yes** (output pre-computed, see below) |
 | `01_quality_metrics.py` | Volume-level quality metrics (helper for `10`) | **Yes** |
 | `utils.py` | Shared helper functions | — |
@@ -194,23 +194,25 @@ Supporting metadata in `data/`:
 
 ---
 
-## 8. Source data for the main figures (Supplementary Data)
+## 8. Source data for the main figures
 
 `14_source_data.py` writes one workbook per main figure to `source_data/`:
 
 | Figure | File |
 |---|---|
-| Figure 3 — image quality metrics | `source_data/SourceData_Fig3.xlsx` |
-| Figure 4 — TLE regional concordance (4B, 4C, 4D) | `source_data/SourceData_Fig4.xlsx` |
-| Figure 5 — MCI regional concordance | `source_data/SourceData_Fig5.xlsx` |
-| Figure 6 — Cohen's d quadrants and shaded surface maps | `source_data/SourceData_Fig6.xlsx` |
+| Figure 3 — image quality metrics | `source_data/MainFigure3_SourceData.xlsx` |
+| Figure 4 — TLE regional concordance (4B, 4C, 4D) | `source_data/MainFigure4_SourceData.xlsx` |
+| Figure 5 — MCI regional concordance | `source_data/MainFigure5_SourceData.xlsx` |
+| Figure 6 — Cohen's d quadrants and shaded surface maps | `source_data/MainFigure6_SourceData.xlsx` |
 
 Each workbook has one sheet per figure panel plus a `data_dictionary` sheet
 defining every column. Figures 1 and 2 are a schematic and representative images
-and have no underlying source data.
+and have no underlying source data. The same per-region summary values (rounded)
+are also provided as the Supplementary Tables in
+`tables/revision_supplementary_tables/`.
 
-These are the files to upload as Supplementary Data. See **`SOURCE_DATA.md`** for
-the figure → file mapping and what each sheet contains.
+See **`SOURCE_DATA.md`** for the figure → file mapping and what each sheet
+contains.
 
 ---
 

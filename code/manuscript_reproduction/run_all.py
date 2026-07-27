@@ -45,7 +45,7 @@ STEPS = [
 # Runs last: it repackages outputs of the steps above *and* of the notebook
 # (tables/revision_cohens_d/), so it must come after both.
 SOURCE_DATA_STEP = ("14_source_data.py", None,
-                    "Per-figure source data workbooks (Supplementary Data)")
+                    "Per-figure source-data workbooks for the main figures")
 
 
 def run(cmd, label):
@@ -91,7 +91,7 @@ def main():
 
     print(f"\nAll done — {datetime.now():%Y-%m-%d %H:%M:%S}")
     print("Figures -> figures/    Tables -> tables/    Notebook -> revision_report.ipynb")
-    print("Source data (Supplementary Data) -> source_data/")
+    print("Main-figure source data -> source_data/")
 
 
 if __name__ == "__main__":

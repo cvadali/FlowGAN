@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Build the per-figure Supplementary Data (source data) workbooks.
+Build the per-figure source-data workbooks for the main manuscript figures.
 
 Each main manuscript figure that plots data gets one .xlsx file, with one sheet
 per panel plus a data_dictionary sheet:
 
-    source_data/SourceData_Fig3.xlsx   -> Figure 3 (quality metrics)
-    source_data/SourceData_Fig4.xlsx   -> Figure 4 (TLE: 4B, 4C, 4D)
-    source_data/SourceData_Fig5.xlsx   -> Figure 5 (MCI: 5C and per-region delta r)
-    source_data/SourceData_Fig6.xlsx   -> Figure 6 (Cohen's d quadrants + shaded maps)
+    source_data/MainFigure3_SourceData.xlsx   -> Figure 3 (quality metrics)
+    source_data/MainFigure4_SourceData.xlsx   -> Figure 4 (TLE: 4B, 4C, 4D)
+    source_data/MainFigure5_SourceData.xlsx   -> Figure 5 (MCI: 5C and per-region delta r)
+    source_data/MainFigure6_SourceData.xlsx   -> Figure 6 (Cohen's d quadrants + shaded maps)
 
 Figures 1 and 2 are schematics / representative images and plot no data, so they
 have no source-data file.
@@ -116,7 +116,7 @@ def build_fig3():
          'Mean metric across subjects in that fold; these are the points plotted '
          'in the cross-validated panel of Figure 3'),
     ]
-    write_workbook('SourceData_Fig3.xlsx', sheets, dd)
+    write_workbook('MainFigure3_SourceData.xlsx', sheets, dd)
 
 
 # ------------------------------------------------- Figures 4 and 5 (per-region)
@@ -194,7 +194,7 @@ def build_fig4():
          'Same, for ASL (plotted in Fig 4D)'),
         ('Fig4D_<atlas>_<split>', 'Congruency_Diff', 'Congruency_FlowGAN minus Congruency_ASL'),
     ]
-    write_workbook('SourceData_Fig4.xlsx', sheets, dd)
+    write_workbook('MainFigure4_SourceData.xlsx', sheets, dd)
 
 
 def build_fig5():
@@ -218,7 +218,7 @@ def build_fig5():
          'Spearman_r_FlowGAN minus Spearman_r_ASL; the bar height plotted in the '
          'per-region delta r forest (positive favours FlowGAN)'),
     ]
-    write_workbook('SourceData_Fig5.xlsx', sheets, dd)
+    write_workbook('MainFigure5_SourceData.xlsx', sheets, dd)
 
 
 # ---------------------------------------------------------------- Figure 6
@@ -256,7 +256,7 @@ def build_fig6():
          'asl_gt_synth / similar / synth_gt_asl; the category shaded on the surface maps'),
         ('Fig6_<cohort>_<atlas>_<split>', 'quadrant_color', 'Plot colour for quadrant_category'),
     ]
-    write_workbook('SourceData_Fig6.xlsx', sheets, dd)
+    write_workbook('MainFigure6_SourceData.xlsx', sheets, dd)
 
 
 def main():
